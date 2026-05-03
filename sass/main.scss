@@ -78,20 +78,28 @@ a {
 
 // ---- Nav ----
 header {
-  border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 2px solid #111;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
 }
 
 .site-title {
-  font-size: 1rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-variant: small-caps;
+  letter-spacing: 0.14em;
   color: var(--text);
-  letter-spacing: 0.01em;
 
   &::after { background: currentColor; }
   &:hover { color: #0a7a3e; }
@@ -153,6 +161,27 @@ em {
   margin-bottom: 4rem;
 
   h1 { margin-bottom: 0.75rem; }
+}
+
+.social-links {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+
+  a {
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    transition: color 180ms ease;
+
+    &::after { display: none; }
+    &:hover { color: var(--text); }
+  }
+
+  svg {
+    width: 19px;
+    height: 19px;
+  }
 }
 
 .bio-photo {
