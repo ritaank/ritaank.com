@@ -23,6 +23,6 @@ What I'm not: a professional educational consultant, or interested in becoming o
 
 ---
 
-**On cost:** I charge for my time — I've found things go better for everyone when I do. But I'm not running a business, so the rate is an honest conversation. I've charged market rates; I've also put in hundreds of free hours where it made sense. We can figure something out.
+**On cost:** I charge for my time — I've found things go better for everyone when I do. But I'm not running a business, so the rate is an honest conversation. I've charged market rates; I've also put in hundreds of free hours where it made sense. Reach out and we can figure something out.
 
-**Interested students, please email** &#114;&#105;&#116;&#97;&#97;&#110;&#107;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
+&#109;&#101;&#64;&#114;&#105;&#116;&#97;&#97;&#110;&#107;&#46;&#99;&#111;&#109;

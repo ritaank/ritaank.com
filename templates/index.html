@@ -3,9 +3,21 @@
 {% block title %}{{ config.title }}{% endblock title %}
 
 {% block content %}
+{% set about = get_page(path="about.md") %}
 <section class="bio">
-  <h1>ritaank</h1>
-  <p>Software engineer. Bio coming soon.</p>
+  <picture>
+    <source srcset="/photo.webp" type="image/webp">
+    <img
+      src="/photo.jpg"
+      alt="Ritaank at MIT commencement"
+      class="bio-photo"
+      width="1400"
+      height="934"
+      loading="eager"
+    >
+  </picture>
+  <h1>About</h1>
+  {{ about.content | safe }}
 </section>
 
 {% set blog = get_section(path="blog/_index.md") %}
