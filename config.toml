@@ -1,0 +1,8 @@
+base_url = "https://ritaank.com"
+title = "ritaank"
+description = "ritaank's home on the internet"
+compile_sass = true
+minify_html = true
+
+[markdown]
+highlighting.theme = "nord"

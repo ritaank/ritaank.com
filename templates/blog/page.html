@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} — {{ config.title }}{% endblock title %}
+{% block description %}{% if page.description %}{{ page.description }}{% endif %}{% endblock description %}
+
+{% block content %}
+<article>
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date(format='%Y-%m-%d') }}">{{ page.date | date(format="%B %d, %Y") }}</time>
+      <span>{{ page.reading_time }} min read</span>
+    </div>
+  </header>
+  <div class="post-body">
+    {{ page.content | safe }}
+  </div>
+  <nav class="post-nav">
+    {% if page.earlier %}
+    <a href="{{ page.earlier.permalink }}" class="post-nav-prev">← {{ page.earlier.title }}</a>
+    {% else %}
+    <span></span>
+    {% endif %}
+    {% if page.later %}
+    <a href="{{ page.later.permalink }}" class="post-nav-next">{{ page.later.title }} →</a>
+    {% endif %}
+  </nav>
+</article>
+{% endblock content %}

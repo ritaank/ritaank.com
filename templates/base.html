@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
+  <link rel="stylesheet" href="{{ get_url(path='main.css') }}">
+</head>
+<body>
+  {% include "partials/nav.html" %}
+  <main>
+    <div class="container">
+      {% block content %}{% endblock content %}
+    </div>
+  </main>
+  {% include "partials/footer.html" %}
+</body>
+</html>

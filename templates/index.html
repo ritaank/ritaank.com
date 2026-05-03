@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}{{ config.title }}{% endblock title %}
+
+{% block content %}
+<section class="bio">
+  <h1>ritaank</h1>
+  <p>Software engineer. Bio coming soon.</p>
+</section>
+
+{% set blog = get_section(path="blog/_index.md") %}
+{% if blog.pages %}
+<section class="recent-posts">
+  <h2>recent writing</h2>
+  <ul>
+    {% for post in blog.pages | slice(end=3) %}
+    <li>
+      <a href="{{ post.permalink }}">{{ post.title }}</a>
+      <span class="post-date">{{ post.date | date(format="%B %d, %Y") }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  <a href="/blog/" class="all-posts">all posts →</a>
+</section>
+{% endif %}
+{% endblock content %}
