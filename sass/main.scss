@@ -3,7 +3,7 @@
   --link:       #0055cc;
   --text:       #111111;
   --muted:      #666666;
-  --bg:         #ffffff;
+  --bg:         #f5f4f0;
   --max-width:  680px;
   --serif:      "Times New Roman", Times, serif;
   --mono:       "Courier New", Courier, monospace;
@@ -19,6 +19,7 @@
 // ---- Base ----
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 body {
